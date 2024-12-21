@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/upload_style.css">
+        <title>PDF-water-mark</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Загрузите PDF файл</h2>
+            <form action="/convert" method="POST" enctype="multipart/form-data">
+                <label for="file">Выберите файл:</label>
+                <input type="file" id="file" name="file" accept="application/pdf" required>
+                <button type="submit">Загрузить</button>
+            </form>
+            <div id="message"></div>
+        </div>
+
+    </body>
+</html>
